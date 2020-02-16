@@ -1586,7 +1586,7 @@ let DropDownList = class DropDownList extends DropDownBase {
         else if (this.text && isNullOrUndefined(this.value)) {
             let element = this.getElementByText(this.text);
             if (isNullOrUndefined(element)) {
-                this.setProperties({ text: null });
+                //this.setProperties({ text: null });
                 return;
             }
             else {
@@ -3337,7 +3337,7 @@ let DropDownList = class DropDownList extends DropDownBase {
     updateDataSource(props) {
         if (this.inputElement.value !== '' || (!isNullOrUndefined(props) && (isNullOrUndefined(props.dataSource)
             || (!(props.dataSource instanceof DataManager) && props.dataSource.length === 0)))) {
-            this.clearAll(null, props);
+            // this.clearAll(null, props);
         }
         if (!(!isNullOrUndefined(props) && (isNullOrUndefined(props.dataSource)
             || (!(props.dataSource instanceof DataManager) && props.dataSource.length === 0)))) {
